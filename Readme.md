@@ -98,13 +98,26 @@ The classifier is trained on the **GPT-2 Small (124M)** variant.
 
 ## Quick Start
 
-### Requirements
+### 1. Clone the Repository
 ```bash
-pip install torch tiktoken
+git clone https://github.com/your-username/CustomGPT2_SpamClassifier.git
+cd CustomGPT2_SpamClassifier
 ```
 
-### Download the Fine-Tuned Weights
-Download `review_classifier_llm_finetuned_Nov_01.pth` from [Google Drive](https://drive.google.com/file/d/164s6lTnNNZmfsIxnsYZf_qRwZ6GecUl_/view?usp=drive_link) and place it in the project root.
+### 2. Create and Activate a Virtual Environment
+```bash
+python3 -m venv venv
+source venv/bin/activate        # macOS / Linux
+# venv\Scripts\activate         # Windows
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download the Fine-Tuned Weights
+Download `review_classifier_llm_finetuned_Nov_01.pth` from [my personal Google Drive](https://drive.google.com/file/d/164s6lTnNNZmfsIxnsYZf_qRwZ6GecUl_/view?usp=drive_link) and place it in the project root.
 
 ### Run the Classifier
 ```python

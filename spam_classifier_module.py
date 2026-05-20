@@ -42,7 +42,7 @@ GPT124M_classifier_Fintune_model.out_head = torch.nn.Linear(
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 GPT124M_classifier_Fintune_model.to(device)
 # Load the state dict with strict=False to ignore size mismatches
-GPT124M_classifier_Fintune_model.load_state_dict(torch.load("review_classifier_llm_finetuned_Nov_01.pth", map_location=torch.device('mps'), weights_only=True), strict=False)
+GPT124M_classifier_Fintune_model.load_state_dict(torch.load("LLM/review_classifier_llm_finetuned_Nov_01.pth", map_location=torch.device('mps'), weights_only=True), strict=False)
 
 # Define the generate function
 def classify_review(text, model, tokenizer, device, max_length=None, pad_token_id=50256):
