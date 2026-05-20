@@ -13,6 +13,8 @@ A **GPT-2 transformer model built entirely from scratch** in PyTorch, then fine-
 
 This project takes a 124M-parameter GPT-2 architecture, implemented from the ground up, and repurposes it for spam detection through fine-tuning. The final output head is swapped from a vocabulary projection to a 2-class linear layer, and the model is trained to distinguish spam from legitimate messages.
 
+![Transformer Architecture](img/tranformer.png)
+
 ```
 Input Text
     │
